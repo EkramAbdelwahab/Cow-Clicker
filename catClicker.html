@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>cat clicker</title>
+<style>
+body {
+    text-align: center;
+}
+</style>
+</head>
+<body margin>
+<H1>Cow Clicker</H1>
+<a id="cow" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cow_cartoon_04.svg"></a>
+<br>
+<p>Number of clicks: </p>
+<p id="clicks"></p>
+
+<script > count = 0;
+var elem = document.getElementById('cow');
+console.log(elem);
+elem.addEventListener('click', function() {
+    count += 1;
+    document.getElementById("clicks").innerHTML = count;
+}, false); </script>
+
+</body>
+</html>
